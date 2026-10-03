@@ -1,0 +1,4 @@
+rule,alert_count,reviewed_count,pending_count,confirmed_count,reviewed_confirmation_rate,avg_review_hours,aged_pending
+Amount outlier,636,506.0,130,165.0,0.32608695652173914,2.0396442687747034,92
+Duplicate pattern,576,469.0,107,164.0,0.34968017057569295,2.031769722814499,73
+Velocity,588,481.0,107,162.0,0.3367983367983368,1.9991683991683993,72

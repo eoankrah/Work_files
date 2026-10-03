@@ -1,0 +1,9 @@
+claim_id,carrier,claim_type,channel,opened_date,cohort_month,closed_date,status,missing_documents,first_response_hours,cycle_days,age_days,paid_amount,sla_days
+C000030,,Property,Agent,2026-05-05,2026-05,2026-05-16,Closed,0.0,17.48,11.0,149.0,6755.71,20.0
+C000031,,Auto,Mobile,2026-07-07,2026-07,2026-07-19,Closed,1.0,13.95,12.0,86.0,3333.07,14.0
+C000032,,Auto,Web,2026-06-04,2026-06,2026-06-14,Closed,0.0,11.13,10.0,119.0,3061.4,14.0
+C000033,,Property,Agent,2026-05-05,2026-05,,Open,1.0,18.75,,149.0,0.0,20.0
+C000034,,Auto,Agent,2026-05-21,2026-05,2026-05-28,Closed,0.0,16.89,7.0,133.0,251.9,14.0
+C000035,,Liability,Mobile,2026-04-14,2026-04,2026-04-23,Closed,0.0,8.71,9.0,170.0,1602.69,14.0
+C000036,,Liability,Web,2026-08-09,2026-08,2026-08-17,Closed,0.0,16.11,8.0,53.0,3776.94,14.0
+C000037,,Liability,Agent,2026-09-03,2026-09,2026-09-05,Closed,0.0,15.85,2.0,28.0,2874.68,14.0

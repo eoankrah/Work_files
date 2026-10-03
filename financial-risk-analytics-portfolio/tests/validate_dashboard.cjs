@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm');
+const html=fs.readFileSync(require('path').join(__dirname,'../dashboard/index.html'),'utf8');
+const script=html.match(/<script>([\s\S]*)<\/script>/)[1];
+const els={};for(const id of ['carrier','kind','channel','filters','scope','cards','chart','detail','quality','ops','risk','exp']) els[id]={value:'All',style:{},innerHTML:'',textContent:'',id};
+const context={document:{getElementById:id=>els[id],querySelectorAll:()=>['ops','risk','exp'].map(x=>els[x])}};vm.createContext(context);vm.runInContext(script,context);
+if(!els.cards.innerHTML.includes('6,000'))throw Error('claim count');
+els.carrier.value='Carrier A';vm.runInContext('render()',context);if(els.cards.innerHTML.includes('6,000'))throw Error('filter did not apply');
+vm.runInContext("show('risk')",context);if(!els.cards.innerHTML.includes('1800'))throw Error('risk view');
+vm.runInContext("show('exp')",context);if(!els.cards.innerHTML.includes('4.64'))throw Error('experiment');
+console.log('PASS dashboard JavaScript: initial rendering, carrier filtering, risk tab, experiment tab. Browser layout not tested.');

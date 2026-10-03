@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-10-01",
+  "claims": 6000,
+  "closed": 5206,
+  "backlog": 794,
+  "median_closed_days": 10.0,
+  "p90_closed_days": 20.0,
+  "experiment": {
+    "groups": {
+      "Control": {
+        "n": 4021,
+        "success": 2639,
+        "rate": 0.6563044018900771
+      },
+      "Guided": {
+        "n": 3979,
+        "success": 2796,
+        "rate": 0.7026891178688113
+      }
+    },
+    "absolute_lift_pp": 4.6384715978734175,
+    "relative_lift": 0.07067561309226604,
+    "ci95_pp": [
+      2.5959047156340547,
+      6.681038480112779
+    ],
+    "two_sided_p": 8.806493092275992e-06,
+    "srm_p": 0.6386592072943855,
+    "method": "Independent user randomization; 7-day intention-to-treat; normal approximation; unadjusted two-sided primary test"
+  },
+  "data_quality": {
+    "raw_rows": 6012,
+    "duplicate_excess": 12,
+    "missing_carrier_rows": 8,
+    "negative_paid_rows": 5
+  }
+}
